@@ -1,0 +1,14 @@
+Options +Indexes
+
+<IfModule mod_autoindex.c>
+	IndexOptions +Charset=UTF-8 +FancyIndexing +HTMLTable +FoldersFirst  +NameWidth=*
+	IndexHeadInsert "<meta name='viewport' content='width=device-width,initial-scale=0.9'><meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+	IndexStyleSheet "/pathtolist/list/style.css"
+	IndexIgnore list
+	HeaderName "/pathtolist/list/list.html"
+	ReadmeName "/pathtolist/list/eof.html"
+	DefaultIcon "/pathtolist/list/icons/unknown.svg"
+	AddIcon "/pathtolist/list/icons/folder.svg" ^^DIRECTORY^^
+	AddIcon "/pathtolist/list/icons/folder-home.svg" ..
+	AddIcon "/pathtolist/list/icons/video.svg" .ts .mp4
+</IfModule>
