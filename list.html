@@ -33,7 +33,7 @@
 			</form>
 			<form id="FORM">
 				<div class="mui-textfield" style="margin-bottom:0px;">
-					<input type="text" id="search" name="P" style="width:100%;" placeholder="キーワードを入力" value="" />
+					<input type="text" id="search" name="P" style="width:100%;" placeholder="キーワードを入力" onkeydown="if(event.key==='Enter'){search();}" value="" />
 				</div>
 			</form>
 			<button class="mui-btn mui-btn--primary mui-btn--small" style="width:100%" onclick="search()">検索</button>
